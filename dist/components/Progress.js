@@ -14,10 +14,6 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _styledComponents = require('styled-components');
-
-var _styledComponents2 = _interopRequireDefault(_styledComponents);
-
 var _line = require('./line');
 
 var _overlay = require('./overlay');
@@ -44,7 +40,7 @@ var Progress = function (_Component) {
 
     _this.state = {
       show: props.show,
-      showOverlay: props.showOverlay || false
+      overlay: props.overlay || false
     };
     return _this;
   }
@@ -60,7 +56,7 @@ var Progress = function (_Component) {
     value: function componentWillReceiveProps(nextProps) {
       this.setState({
         show: nextProps.show,
-        showOverlay: nextProps.showOverlay || false
+        overlay: nextProps.overlay || false
       });
     }
 
@@ -87,7 +83,7 @@ var Progress = function (_Component) {
   }, {
     key: 'renderOverlay',
     value: function renderOverlay() {
-      if (this.state.showOverlay) {
+      if (this.state.overlay) {
         return _react2.default.createElement(_overlay.Overlay, null);
       } else {
         return null;
@@ -116,13 +112,13 @@ var Progress = function (_Component) {
 
 /**
  * Component PropTypes
- * @type {{show: *, showOverlay: *}}
+ * @type {{show: *, overlay: *}}
  */
 
 
 Progress.propTypes = {
   show: _propTypes2.default.bool,
-  showOverlay: _propTypes2.default.bool
+  overlay: _propTypes2.default.bool
 };
 
 exports.default = Progress;
