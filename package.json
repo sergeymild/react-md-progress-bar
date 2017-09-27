@@ -1,0 +1,13 @@
+{
+  "name": "react-progress",
+  "version": "0.0.1",
+  "description": "React Component Progressbar",
+  "main": "./src/index.js",
+  "repository": "https://github.com/mcnallydev/react-progress.git",
+  "author": "Paulo McNally <paulomcnally@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0"
+  }
+}
