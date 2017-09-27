@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './Progress.css';
+import styled from 'styled-components';
+
+import { Line } from './line';
+import { Overlay } from './overlay';
+
 
 class Progress extends Component {
   /**
@@ -32,9 +36,11 @@ class Progress extends Component {
    */
   renderProgressBar() {
     if (this.state.show) {
-      return(
-        <div className="progress-line"></div>
-      )
+      return (
+        <Line />
+      );
+    } else {
+      return (null);
     }
   }
 
@@ -45,8 +51,10 @@ class Progress extends Component {
   renderOverlay() {
     if (this.state.showOverlay) {
       return (
-        <div className="progress-overlay"></div>
-      )
+        <Overlay />
+      );
+    } else {
+      return (null);
     }
   }
 

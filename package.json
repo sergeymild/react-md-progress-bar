@@ -11,13 +11,16 @@
   ],
   "scripts": {
     "start": "webpack-dev-server",
+    "docs": "NODE_ENV=production webpack -p",
     "build": "babel src -d dist",
-    "clean": "rn -rf dist",
-    "dist": "yarn run clean && yarn run buildßß"
+    "clean": "rm -rf dist",
+    "dist": "yarn run clean && yarn run build"
   },
   "dependencies": {
     "prop-types": "^15.6.0",
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "styled-components": "^2.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
