@@ -3,7 +3,7 @@ import { Progress } from '../dist'
 
 const App = () =>
   <div>
-    <Progress show={true} showOverlay={true} />
+    <Progress show={true} overlay={true} />
   </div>
 
 export default App
