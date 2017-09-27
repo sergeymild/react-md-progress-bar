@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
 import { Line } from './line';
 import { Overlay } from './overlay';
-
 
 class Progress extends Component {
   /**
@@ -15,7 +12,7 @@ class Progress extends Component {
     super(props);
     this.state = {
       show: props.show,
-      showOverlay: props.showOverlay || false
+      overlay: props.overlay || false
     }
   }
 
@@ -26,7 +23,7 @@ class Progress extends Component {
   componentWillReceiveProps(nextProps) {
     this.setState({
       show: nextProps.show,
-      showOverlay: nextProps.showOverlay || false
+      overlay: nextProps.overlay || false
     });
   }
 
@@ -49,7 +46,7 @@ class Progress extends Component {
    * @returns {XML}
    */
   renderOverlay() {
-    if (this.state.showOverlay) {
+    if (this.state.overlay) {
       return (
         <Overlay />
       );
@@ -74,11 +71,11 @@ class Progress extends Component {
 
 /**
  * Component PropTypes
- * @type {{show: *, showOverlay: *}}
+ * @type {{show: *, overlay: *}}
  */
 Progress.propTypes = {
   show: PropTypes.bool,
-  showOverlay: PropTypes.bool
+  overlay: PropTypes.bool
 };
 
 export default Progress;

@@ -1,15 +1,24 @@
 import styled, { keyframes } from 'styled-components';
 
 const runningProgress = keyframes`
-  0% { margin-left: 0px; margin-right: 100%; }
-  50% { margin-left: 25%; margin-right: 0%; }
-  100% { margin-left: 100%; margin-right: 0; }
+  0% {
+    margin-left: 0px;
+    margin-right: 100%;
+  }
+  50% {
+    margin-left: 25%;
+    margin-right: 0%;
+  }
+  100% {
+    margin-left: 100%;
+    margin-right: 0;
+  }
 `
 
 export const Line = styled.div`
   background-color: #F2F2F2;
   display: flex;
-  position: relative ;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 5;
