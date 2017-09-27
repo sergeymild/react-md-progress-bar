@@ -1,5 +1,5 @@
 # react-progress
-React Component Progressbar
+React Component Progress
 
 ## Preview
 [![Preview](http://i.imgur.com/19itcci.gif)](http://i.imgur.com/19itcci.gifv)
@@ -10,5 +10,5 @@ React Component Progressbar
 
 ## Example
     ...
-    <Progress show={true} showOverlay={true} />
+    <Progress show={true} overlay={true} />
     ...
