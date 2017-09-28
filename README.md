@@ -9,12 +9,11 @@ React Component Material Design Progress Bar.
     $ yarn add react-md-progress-bar
 
 ## Example
+```javascript
+import { Dialog } from 'react-md-progress-bar';
 
-    import { Dialog } from 'react-md-progress-bar';
-
-    ...
-    <ProgressBar show={true} overlay={true} />
-    ...
+<ProgressBar show={true} overlay={true} />
+```
 
 ## Props
 
