@@ -1,5 +1,5 @@
 # react-md-progress-bar
-React Component Material Design Progress bar
+React Component Material Design Progress Bar.
 
 ## Preview
 [![Preview](https://i.imgur.com/6ruGaji.gif)](http://i.imgur.com/19itcci.gifv)
@@ -10,6 +10,15 @@ React Component Material Design Progress bar
 
 ## Example
 
+    import { Dialog } from 'react-md-progress-bar';
+
     ...
     <ProgressBar show={true} overlay={true} />
     ...
+
+## Props
+
+Name | Description | Default/Required | Type
+------|-------------|----------|-----------
+show | Show or hide ProgressBar. | required | bool
+overlay | Show or hide overlay. | optional | bool
