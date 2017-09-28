@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "React Component Material Design Progress bar",
   "main": "index.js",
-  "repository": "https://github.com/mcnallydev/react-progress.git",
+  "repository": "https://github.com/mcnallydev/react-md-progress-bar.git",
   "author": "Paulo McNally <paulomcnally@gmail.com>",
   "license": "MIT",
   "files": [
