@@ -1,7 +1,7 @@
 {
-  "name": "react-progress",
+  "name": "react-md-progress-bar",
   "version": "0.0.1",
-  "description": "React Component Progressbar",
+  "description": "React Component Material Design Progress bar",
   "main": "index.js",
   "repository": "https://github.com/mcnallydev/react-progress.git",
   "author": "Paulo McNally <paulomcnally@gmail.com>",
