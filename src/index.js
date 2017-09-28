@@ -1,1 +1,1 @@
-export { default as Progress } from './components/Progress';
+export { default as ProgressBar } from './components/ProgressBar';

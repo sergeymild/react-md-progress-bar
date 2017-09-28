@@ -1,14 +1,15 @@
-# react-progress
-React Component Progress
+# react-md-progress-bar
+React Component Material Design Progress bar
 
 ## Preview
-[![Preview](http://i.imgur.com/19itcci.gif)](http://i.imgur.com/19itcci.gifv)
+[![Preview](https://i.imgur.com/6ruGaji.gif)](http://i.imgur.com/19itcci.gifv)
 
 ## Installation
-    $ yarn add https://github.com/mcnallydev/react-progress
 
+    $ yarn add react-md-progress-bar
 
 ## Example
+
     ...
-    <Progress show={true} overlay={true} />
+    <ProgressBar show={true} overlay={true} />
     ...

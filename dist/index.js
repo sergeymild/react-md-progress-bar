@@ -4,12 +4,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _Progress = require('./components/Progress');
+var _ProgressBar = require('./components/ProgressBar');
 
-Object.defineProperty(exports, 'Progress', {
+Object.defineProperty(exports, 'ProgressBar', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_Progress).default;
+    return _interopRequireDefault(_ProgressBar).default;
   }
 });
 

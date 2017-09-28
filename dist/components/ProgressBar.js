@@ -26,17 +26,17 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Progress = function (_Component) {
-  _inherits(Progress, _Component);
+var ProgressBar = function (_Component) {
+  _inherits(ProgressBar, _Component);
 
   /**
    * React Component constructor.
    * @param props
    */
-  function Progress(props) {
-    _classCallCheck(this, Progress);
+  function ProgressBar(props) {
+    _classCallCheck(this, ProgressBar);
 
-    var _this = _possibleConstructorReturn(this, (Progress.__proto__ || Object.getPrototypeOf(Progress)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (ProgressBar.__proto__ || Object.getPrototypeOf(ProgressBar)).call(this, props));
 
     _this.state = {
       show: props.show,
@@ -51,7 +51,7 @@ var Progress = function (_Component) {
    */
 
 
-  _createClass(Progress, [{
+  _createClass(ProgressBar, [{
     key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
       this.setState({
@@ -100,14 +100,14 @@ var Progress = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'progress' },
+        null,
         this.renderProgressBar(),
         this.renderOverlay()
       );
     }
   }]);
 
-  return Progress;
+  return ProgressBar;
 }(_react.Component);
 
 /**
@@ -116,9 +116,9 @@ var Progress = function (_Component) {
  */
 
 
-Progress.propTypes = {
+ProgressBar.propTypes = {
   show: _propTypes2.default.bool,
   overlay: _propTypes2.default.bool
 };
 
-exports.default = Progress;
+exports.default = ProgressBar;

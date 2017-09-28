@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Line } from './line';
 import { Overlay } from './overlay';
 
-class Progress extends Component {
+class ProgressBar extends Component {
   /**
    * React Component constructor.
    * @param props
@@ -61,7 +61,7 @@ class Progress extends Component {
    */
   render() {
     return (
-      <div className="progress">
+      <div>
         {this.renderProgressBar()}
         {this.renderOverlay()}
       </div>
@@ -73,9 +73,9 @@ class Progress extends Component {
  * Component PropTypes
  * @type {{show: *, overlay: *}}
  */
-Progress.propTypes = {
+ProgressBar.propTypes = {
   show: PropTypes.bool,
   overlay: PropTypes.bool
 };
 
-export default Progress;
+export default ProgressBar;

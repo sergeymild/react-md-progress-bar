@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-const runningProgress = keyframes`
+const runningProgressBar = keyframes`
   0% {
     margin-left: 0px;
     margin-right: 100%;
@@ -32,6 +32,6 @@ export const Line = styled.div`
     margin: 0;
     background-color: #ff9800;
     content: '';
-    animation: ${runningProgress} 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    animation: ${runningProgressBar} 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   }
 `
