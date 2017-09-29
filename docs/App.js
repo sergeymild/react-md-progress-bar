@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProgressBar } from '../dist'
+import ProgressBar from '../dist'
 
 const App = () =>
   <div>

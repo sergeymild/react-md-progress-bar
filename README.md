@@ -10,7 +10,7 @@ React Component Material Design Progress Bar.
 
 ## Example
 ```javascript
-import { Dialog } from 'react-md-progress-bar';
+import ProgressBar from 'react-md-progress-bar';
 
 <ProgressBar show={true} overlay={true} />
 ```

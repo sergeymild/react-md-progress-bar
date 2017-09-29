@@ -6,11 +6,8 @@ Object.defineProperty(exports, "__esModule", {
 
 var _ProgressBar = require('./components/ProgressBar');
 
-Object.defineProperty(exports, 'ProgressBar', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_ProgressBar).default;
-  }
-});
+var _ProgressBar2 = _interopRequireDefault(_ProgressBar);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = _ProgressBar2.default;
