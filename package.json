@@ -1,6 +1,6 @@
 {
   "name": "react-md-progress-bar",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React Component Material Design Progress bar",
   "main": "index.js",
   "repository": "https://github.com/mcnallydev/react-md-progress-bar.git",
@@ -18,9 +18,9 @@
   },
   "dependencies": {
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "styled-components": "^2.2.0"
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "styled-components": "^3.4.9"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
