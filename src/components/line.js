@@ -30,7 +30,7 @@ export const Line = styled.div`
     height: 4px;
     width: 100%;
     margin: 0;
-    background-color: #ff9800;
+    background-color: ${props => props.color}
     content: '';
     animation: ${runningProgressBar} 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   }
