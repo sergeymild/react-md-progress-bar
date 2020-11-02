@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Line } from './line';
+import './style.css'
 
 class ProgressBar extends Component {
   /**
@@ -31,7 +31,7 @@ class ProgressBar extends Component {
   renderProgressBar() {
     if (this.state.show) {
       return (
-        <Line color={this.props.color} />
+        <div className="indeterminate" data-color={this.props.color} />
       );
     } else {
       return null;
