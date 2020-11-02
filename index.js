@@ -1,1 +1,2 @@
-module.exports = require('./dist');
+import ProgressBar from './src/ProgressBar'
+export default ProgressBar;
