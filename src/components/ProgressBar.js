@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Line } from './line';
-import { Overlay } from './overlay';
 
 class ProgressBar extends Component {
   /**
@@ -11,8 +10,7 @@ class ProgressBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: props.show,
-      overlay: props.overlay || false
+      show: props.show
     }
   }
 
@@ -22,8 +20,7 @@ class ProgressBar extends Component {
    */
   componentWillReceiveProps(nextProps) {
     this.setState({
-      show: nextProps.show,
-      overlay: nextProps.overlay || false
+      show: nextProps.show
     });
   }
 
@@ -34,24 +31,10 @@ class ProgressBar extends Component {
   renderProgressBar() {
     if (this.state.show) {
       return (
-        <Line />
+        <Line color={this.props.color} />
       );
     } else {
-      return (null);
-    }
-  }
-
-  /**
-   * Render overlay.
-   * @returns {XML}
-   */
-  renderOverlay() {
-    if (this.state.overlay) {
-      return (
-        <Overlay />
-      );
-    } else {
-      return (null);
+      return null;
     }
   }
 
@@ -60,12 +43,7 @@ class ProgressBar extends Component {
    * @returns {XML}
    */
   render() {
-    return (
-      <div>
-        {this.renderProgressBar()}
-        {this.renderOverlay()}
-      </div>
-    );
+    return (this.renderProgressBar());
   }
 }
 
@@ -75,7 +53,7 @@ class ProgressBar extends Component {
  */
 ProgressBar.propTypes = {
   show: PropTypes.bool,
-  overlay: PropTypes.bool
+  color: PropTypes.string
 };
 
 export default ProgressBar;
